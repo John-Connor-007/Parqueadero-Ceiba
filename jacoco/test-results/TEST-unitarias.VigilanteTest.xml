@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unitarias.VigilanteTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-01-10T13:56:45" hostname="JHON-ZULUAGA" time="0.056">
+  <properties/>
+  <testcase name="placaComienzaPorATestFallando" classname="unitarias.VigilanteTest" time="0.003"/>
+  <testcase name="fechaEntradaTest" classname="unitarias.VigilanteTest" time="0.052"/>
+  <testcase name="placaComienzaPorATestBuena" classname="unitarias.VigilanteTest" time="0.0"/>
+  <testcase name="cuposdeMotos" classname="unitarias.VigilanteTest" time="0.001"/>
+  <testcase name="cuposdeCarros" classname="unitarias.VigilanteTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
