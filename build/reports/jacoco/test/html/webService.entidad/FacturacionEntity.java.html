@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>FacturacionEntity.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">parqueadero2</a> &gt; <a href="index.source.html" class="el_package">webService.entidad</a> &gt; <span class="el_source">FacturacionEntity.java</span></div><h1>FacturacionEntity.java</h1><pre class="source lang-java linenums">package webService.entidad;
+
+import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = &quot;Facturacion&quot;)
+<span class="nc" id="L13">public class FacturacionEntity {</span>
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+		
+	@Column(nullable = false)
+	private Date fechaEntrada;
+
+	@Column(nullable = false)
+	private Date fechaSalida;
+	
+	@Column(nullable = false)
+	private Integer idVehiculo;
+	
+	@Column(nullable = false)
+	private double precio;
+
+	public Long getId() {
+<span class="nc" id="L32">		return id;</span>
+	}
+
+	public void setId(Long id) {
+<span class="nc" id="L36">		this.id = id;</span>
+<span class="nc" id="L37">	}</span>
+
+	public Date getFechaEntrada() {
+<span class="nc" id="L40">		return fechaEntrada;</span>
+	}
+
+	public void setFechaEntrada(Date fechaEntrada) {
+<span class="nc" id="L44">		this.fechaEntrada = fechaEntrada;</span>
+<span class="nc" id="L45">	}</span>
+
+	public Date getFechaSalida() {
+<span class="nc" id="L48">		return fechaSalida;</span>
+	}
+
+	public void setFechaSalida(Date fechaSalida) {
+<span class="nc" id="L52">		this.fechaSalida = fechaSalida;</span>
+<span class="nc" id="L53">	}</span>
+
+	public Integer getIdVehiculo() {
+<span class="nc" id="L56">		return idVehiculo;</span>
+	}
+
+	public void setIdVehiculo(Integer idVehiculo) {
+<span class="nc" id="L60">		this.idVehiculo = idVehiculo;</span>
+<span class="nc" id="L61">	}</span>
+
+	public double getPrecio() {
+<span class="nc" id="L64">		return precio;</span>
+	}
+
+	public void setPrecio(double precio) {
+<span class="nc" id="L68">		this.precio = precio;</span>
+<span class="nc" id="L69">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
